@@ -1,0 +1,19 @@
+body {
+	/* border: 1px solid red; */
+}
+.max-container{
+	display: grid;
+	grid-template: repeat(3, 1fr) / 1fr 3fr;
+}
+.left-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto;
+}
+.letters{
+
+}
+.item {
+	border: 1px solid blue;
+	/* height: 50px; */
+}
