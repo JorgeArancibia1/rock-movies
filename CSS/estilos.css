@@ -28,12 +28,14 @@
 body {
 	/* border: 1px solid red; */
 	font-family: Arial;
+	margin: 0;
+	padding: 0;
 }
 .max-container{
 	border: 1px solid green;
-	height: 100vh;
+	height: 100vw;
 	display: grid;
-	grid-template: auto auto auto / 20% 80%;
+	grid-template: 30% 30% 40% / 25% 75%;
 	grid-template-areas: "left up"
 											 "left middle"
 											 "left down";
@@ -55,7 +57,7 @@ body {
 .letters{
 
 }
-.s-rock {
+.s-best {
 	font-size: 2em;
 }
 .s-video {
@@ -126,55 +128,101 @@ body {
 /* UP CONTAINER */
 
 .up {
-	height: 30vh;
+	border: 1px solid red;
+	height: 29.5vw;
 	display: grid;
 	grid-area: up;
 }
-.fig-video {
+.if {
+	border: 1px solid yellow;
 	width: 100%;
 	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-.video {
-	width: 70vw;
-	height: 40vh;
 }
 
 /* MIDDLE CONAINER */
 .middle {
-	border: 1px solid green;
-	height: auto;
+	border: 1px solid rgb(255, 96, 122);
 	display: grid;
-	grid-template: 1fr 1fr / repeat(12, 1fr);
+	grid-template: [if] 1fr [mf] 1fr [ff] / [ic] 1fr [c1] 1fr [c2] 1fr [mc] 1fr [c4] 1fr [c5] 1fr [fc];
 	grid-area: middle;
+	grid-gap: 0;
+	/* display: flex;
+	flex-wrap: wrap; */
 }
 .square {
+	margin: 0;
+	padding: 0;
 	border: 1px solid;
-	width: 100px;
-	height: 100px;
+	width: auto;
+	height: auto;
+}
+.square:nth-of-type(1) {
+	background: #d2d2f8;
+	grid-column: ic / mc;
+}
+.title-video {
+
+}
+.views {
+
+}
+.square:nth-of-type(5) {
+	background: #d2d2f8;
+	grid-column: ic / c1;
+}
+.a-list {
+
+}
+.square:nth-of-type(6) {
+	background: #d2d2f8;
+	grid-column: c1 / c2;
+}
+.icon-reply:before {
+  content: "\e15e";
+}
+.square:nth-of-type(7) {
+	background: #d2d2f8;
+	grid-column: c2 / mc;
+}
+.icon-cloud_download:before {
+  content: "\e2c0";
+}
+.square:nth-of-type(8) {
+	background: #d2d2f8;
+	grid-column: mc / cf;
+
 }
 
 /* DOWN CONTAINER */
 
 .down {
+	border: 4px solid springgreen;
 	display: grid;
 	grid-template: 1fr / 1fr 1fr;
 	grid-area: down;
 	height: auto;
 }
 .comments-container {
+	border: 1px solid green;
 	display: grid;
-	grid-template: repeat(7, 1fr) / 1fr;
+	grid-template: repeat(7, 14.3%) / 1fr;
 }
 .comentarios {
 	border: 1px solid;
-	width: 100px;
-	height: 100px;
+	width: 100%;
+	height: 100%;
 }
 
 .suggestions-container{
+	height: 10%;
 	display: grid;
 	grid-template: 1fr 1fr / 1fr;
 	border: 1px solid red;
+}
+.suggestions {
+	margin: 0;
+	padding: 0;
+}
+.i1 {
+	width: 100%;
 }
