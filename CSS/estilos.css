@@ -30,13 +30,12 @@
 	font-family: Arial;
 	margin: 0;
 	padding: 0;
-	height: 35em;
 }
 .max-container{
 	/* border: 10px solid green; */
 	height: inherit;
 	display: grid;
-	grid-template: 400px 150px 300px / 25% 75%;
+	grid-template: 400px 150px 100px / 25% 75%;
 	grid-template-areas: "left up"
 											 "left middle"
 											 "left down";
@@ -45,11 +44,11 @@
 /* LEFT CONTAINER */
 
 .left {
-	border: 2px solid purple;
+	/* border: 2px solid purple; */
 	background-color: rgb(23, 23, 143);
 	display: grid;
 	grid-template-columns: auto;
-	grid-template: 9% 8% 30% 10% 30% / 100%;
+	grid-template: 9% 5% 30% 10% 30% / 100%;
 	grid-area: left;
 	height: 160%;
 	width: 100%;
@@ -287,10 +286,10 @@
 	right: 40px;
 }
 .p-classic {
-	border: 7px solid #fff021;
-	background-color: #fff021;
+	border: 7px solid #22a707;
+	background-color: #22a707;
 	border-radius: 50px;
-	color: whitesmoke;
+	color: white;
 	position: relative;
 	right: 30px;
 }
@@ -321,20 +320,20 @@
 	height: 100%;
 }
 .comments-container {
-	border: 1px solid green;
+	/* border: 1px solid green; */
 	height: 100%;
 	display: grid;
 	grid-template: 11% 11% 11% 11% 11% 11% 11% / 1fr;
 }
 .title-coment {
-	border: 1px solid;
+	/* border: 1px solid; */
 	padding-left: 1.5em;
 	padding-bottom: 0;
 	margin-bottom: 0;
 	height: 60px;
 }
 .añade-container {
-	border: 1px solid;
+	/* border: 1px solid; */
 }
 .añade {
 	border-radius: 10px;
@@ -343,9 +342,12 @@
 	margin: 1em;
 	padding:0;
 }
+.ic {
+	border-radius: 100px;
+}
 .comentarios {
 	display: inline-flex;
-	border: 1px solid;
+	/* border: 1px solid; */
 	width: 100%;
 	height: 100%;
 }
@@ -354,16 +356,16 @@
 	height: 500px;
 	display: grid;
 	grid-template: 1fr 1fr / 1fr;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 .suggestions {
-	border: 1px solid red;
-	height: 10%;
+	/* border: 1px solid red; */
+	height: 60%;
 	margin: 0;
 	padding: 0;
 }
 .a1 {
-	border: 1px solid green;
+	/* border: 1px solid green; */
 
 }
 .f-i {
